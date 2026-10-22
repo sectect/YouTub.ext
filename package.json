@@ -1,0 +1,33 @@
+{
+  "name": "youtub-ext",
+  "description": "YouTub.ext — YouTube intro and outro skipping with nonstop playback controls.",
+  "version": "1.0.0",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "author": {
+    "name": "Gautam Ankoji",
+    "email": "gautamankoji@gmail.com"
+  },
+  "keywords": [
+    "youtube",
+    "browser-extension",
+    "intro-skip",
+    "outro-skip",
+    "nonstop-playback"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && node scripts/build.mjs",
+    "check": "tsc --noEmit",
+    "test": "npm run build && node scripts/test.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.1.0",
+    "esbuild": "^0.25.0",
+    "fflate": "^0.8.3",
+    "typescript": "^5.8.0"
+  }
+}
